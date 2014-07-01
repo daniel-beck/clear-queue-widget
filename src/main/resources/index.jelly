@@ -1,0 +1,6 @@
+<!--
+  This view is used to render the installed plugins page.
+-->
+<div>
+  Adds a link for administrators to clear the build queue with one click.
+</div>

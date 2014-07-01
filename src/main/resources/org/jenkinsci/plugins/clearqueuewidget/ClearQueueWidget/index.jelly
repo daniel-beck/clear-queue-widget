@@ -1,0 +1,10 @@
+<?jelly escape-by-default='true'?>
+<j:jelly xmlns:j="jelly:core" xmlns:st="jelly:stapler" xmlns:d="jelly:define" xmlns:l="/lib/layout" xmlns:t="/lib/hudson" xmlns:f="/lib/form">
+    <j:if test="${h.hasPermission(app.ADMINISTER)}">
+        <!--<j:if test="${it.showButton}">-->
+            <div style="text-align: right;">
+                <a href="${rootURL}/plugin/clear-queue-widget/clearQueue" onclick="if(confirm('Do you really want to clear the queue?')){new Ajax.Request(this.href);};return false" style="color:red;">clear queue</a>
+            </div>
+        <!--</j:if>-->
+    </j:if>
+</j:jelly>
